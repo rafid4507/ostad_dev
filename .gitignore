@@ -1,0 +1,14 @@
+devops_demo/
+data/
+Assignment/Assets/
+
+node_modules/
+jspm_packages/
+
+.env
+.env.local
+.env.*.local
+
+
+.ngrok
+.ngrok.log
