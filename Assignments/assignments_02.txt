@@ -1,0 +1,78 @@
+﻿OSTAD  |  DEVOPS  |  GIT ASSIGNMENT
+Nanu's Recipe Book
+A story-driven journey through Git
+	
+
+Total Marks
+100
+	Submit
+GitHub repo link + my-story.md
+	Covers
+Setup, Branching, Remote, Stash, History
+	
+
+The Story
+Your Nanu (grandmother) has an old handwritten recipe book full of family recipes: bhapa pitha, Eid biryani, shemai and more. The pages are tearing, so you've decided to make it digital, with help from your cousin Mitu in Chattogram. There's only one rule: no recipe can ever be lost. That's why you'll use Git.
+For each chapter, write the commands you ran and what happened in my-story.md, in your own words, like a story.
+	Chapter 1  The First Recipe (20 Marks)
+Nanu says: "Winter is coming. Write the bhapa pitha recipe first."
+Task A  Set your name and email with git config --global, then create a folder nanur-khata and run git init.
+Task B  Create bhapa-pitha.md, check git status, and stage it with git add.
+Task C  Nanu corrects you: "One and a half cups of gur, not two!" Edit the file, run git diff and git diff --staged, and explain the difference.
+Task D  Commit with a meaningful message using git commit -m.
+Task E  You accidentally staged bazar-list.txt. Unstage it with git reset [file] without deleting it.
+Chapter 2  The Secret Spice (10 Marks)
+Nanu's secret spice blend must never reach GitHub.
+Task A  Create secret-masala.txt, a few .tmp files and a draft/ folder.
+Task B  Write a .gitignore that keeps them all out, and prove it with git status.
+Chapter 3  The Eid Special (20 Marks)
+You want to test the Eid recipes without touching the main book.
+Task A  Create a branch with git branch eid-special and switch to it with git checkout.
+Task B  Add biryani.md and shemai.md in two separate commits.
+Task C  Go back to main. Are the files there? Then run git merge eid-special and check git log.
+Challenge  Create a merge conflict on purpose and resolve it. Explain how.
+Chapter 4  Mitu Joins In (20 Marks)
+Mitu wants to write in the book too, all the way from Chattogram.
+Task A  Create a GitHub repo, connect it with git remote add origin [url], and git push.
+Task B  Play Mitu: git clone the repo into another folder, add chittagong-mezban.md and push.
+Task C  Back in your folder, run git fetch origin, then git merge origin/main.
+Task D  Mitu pushes again. This time use git pull.
+Question: What is the difference between fetch + merge and pull?
+Chapter 5  Half-Cooked Halua and Time Travel (20 Marks)
+Halfway through the halua recipe, Nanu calls: "You forgot cardamom in the biryani!"
+Task A  Save the halua work with git stash, fix and commit the biryani, then git stash pop.
+Task B  Organize recipes into folders with git mv, delete an old recipe with git rm, and check git log --stat -M.
+Task C  Pick a commit and run git show [SHA].
+Task D  On a test branch, try git reset --hard [older-commit] and write down what you lost. Never do this on main!
+Question: Why are rebase and reset --hard dangerous on a shared branch?
+Submission (10 Marks)
+Rule 1  At least 10 meaningful commits and 2 branches in the repo. Messages like "update" lose marks.
+Rule 2  my-story.md with your story, commands, key screenshots and answers.
+Rule 3  End with a screenshot of git log --oneline --graph --all.
+Warning: If secret-masala.txt is found in your repo, Chapter 2 gets zero. Nanu's secrets stay secret!
+	Marking Scheme
+Chapter
+	Topic
+	Marks
+	1
+	The First Recipe
+	20
+	2
+	The Secret Spice
+	10
+	3
+	The Eid Special
+	20
+	4
+	Mitu Joins In
+	20
+	5
+	Half-Cooked Halua and Time Travel
+	20
+	—
+	Submission Quality
+	10
+	Total
+	
+
+	100
